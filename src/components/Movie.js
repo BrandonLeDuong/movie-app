@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieBox from "./MovieBox";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "./Navigation";
 
 function Movie() {
   const [movieList, setMovieList] = useState([]);
@@ -20,6 +21,7 @@ function Movie() {
   console.log(movieList);
   return (
     <div className="container">
+      <Navigation />
       <div className="grid">
         {movieList.map((movie) => (
           //inside the map function we're returning a react component called MovieBox with some props
