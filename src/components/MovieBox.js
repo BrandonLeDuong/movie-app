@@ -7,10 +7,12 @@ const MovieBox = ({ title, poster_path, release_date, overview }) => {
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
+
+
   return (
     <div className="card-container">
       <img src={API_IMG + poster_path} alt={title}></img>
-      <h1>{title}</h1>
+      {/* <h1>{title}</h1> */}
 
       {showDetails ? <p>{overview}</p> : null}
       <button onClick={toggleDetails}>

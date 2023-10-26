@@ -1,21 +1,33 @@
+.movie-container {
+  background-color: rgb(27, 27, 27);
+}
+
 .grid {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 50px;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 100px; /* Add this line */
+  margin-right: 100px; /* Add this line */
 }
 
 .card-container {
-  background-color: rgb(202, 195, 195);
   text-align: center;
-  padding: 50px;
-  flex-basis: calc(
-    50% - 50px
-  ); /* Set width to occupy half of the container minus the gap */
+  flex-basis: calc(25% - 30px); /* Add this line */
+  max-width: 25%; /* Add this line */
 }
 
 .card-container img {
-  max-width: 75%;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease; /* Add transition property */
+}
+
+.card-container img:hover {
+  filter: brightness(80%);
+  transform: scale(1.1);
 }
 
 .card-container h1 {
@@ -26,6 +38,7 @@
 
 .card-container p {
   font-size: 18px;
+  color: white;
 }
 
 .card-container div {
@@ -33,6 +46,11 @@
   color: gray;
 }
 
-.navbar {
-  display: flex;
+.custom-navbar {
+  margin-bottom: 80px;
+}
+
+.banner-image {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
