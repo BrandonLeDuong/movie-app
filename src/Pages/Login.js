@@ -5,7 +5,6 @@ const Login = () => {
   return (
     <div>
       <Navigation />
-      <h1>Login</h1>{" "}
     </div>
   );
 };

@@ -1,7 +1,13 @@
-import React from "react";
+import Movie from "../components/Movie";
+
+import Navigation from "../components/Navigation";
 
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <div>
+      <Movie />
+    </div>
+  );
 };
 
 export default Home;
