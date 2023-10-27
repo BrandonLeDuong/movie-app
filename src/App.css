@@ -1,7 +1,9 @@
 .movie-container {
   background-color: rgb(27, 27, 27);
 }
-
+body {
+  margin: 0;
+}
 .grid {
   display: flex;
   flex-direction: row;
@@ -50,7 +52,30 @@
   margin-bottom: 80px;
 }
 
-.banner-image {
-  background-size: cover;
-  background-repeat: no-repeat;
+.movie-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin-left: 50px;
+}
+
+.detail-container {
+  height: 100vh;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 300px;
+  gap: 20px;
+  color: azure;
+}
+
+.green-tagline {
+  color: rgb(34, 157, 34);
+  font-size: 30px;
+}
+.overview {
+  font-size: 20px;
 }

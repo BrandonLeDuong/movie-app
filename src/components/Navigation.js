@@ -28,8 +28,8 @@ function Navigation({ getMovie }) {
               navbarScroll
             >
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/login">Login</Nav.Link>
-              <Nav.Link href="/signup">Sign Up</Nav.Link>
+              {/* <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/signup">Sign Up</Nav.Link> */}
             </Nav>
             <Form className="d-flex" onSubmit={handleSubmit}>
               <Form.Control
